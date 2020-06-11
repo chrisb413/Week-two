@@ -1,15 +1,22 @@
+-Used Anaconda Powershell to download clones of website pages onto my pc.
+-Wget was the program that actually aquired the pages, Anaconda Powershell was the framework that ran the code.
 
-# Week two process
+# Powershell syntaxes #
+- pwd = print working directory
+- dir = directory
+- cd = Calls a sub-directory
+- mkdir = Makes a new directory/folder
 
-- Started by listening to the introduction audio/podcast by the professor.  
-- After, i downloaded Anaconda and installed it.  (Successful install) and proceeded to follow the instructions.
+
+# Wget syntaxes #
+-r = recursive
+-np = no-parent
+-l = links beyond domain we started in
+-w  = wait/delay between actions
+--limit-rate= limit the bandwidth/speed of download.
 
 
-# Issues
-- Had a bit of trouble installing Homebrew
-  - I thought you misspelled the word user by writing usr instead. Turns out the command line is correct.
-  - Turns out im just dumb and didnt actually read the words "Mac Users"
-- tried running "wget -r -np -w 2 --limit-rate=20k http://activehistory.ca/papers/" but recieved a error.
-  - Error said  __Cannot convert the "2" value of type "System.Int32" to type
-    "Microsoft.PowerShell.Commands.WebRequestSession".__
-  - Problem was resolved by adding .exe to the end of the wget command. (I did have wget in my windows folder so im not super sure why the first step worked but not the second.)
+# OCR #
+-Need to install/import library plugins, much like Java.
+- image_ocr() = extracting text from picture
+- "<-" = creates a variable
